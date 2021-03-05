@@ -1,8 +1,8 @@
 window.addEventListener('mousemove', onMouseMove);
 function onMouseMove(e) {
   gsap.to("#mask1 path", .6, {
-    x: e.clientX/100,
-    y: e.clientY/100 });
+    x: e.clientX/150,
+    y: e.clientY/150 });
 };
 var tl = gsap.timeline({delay:0,ease:"circ.out"})
     .to(".transition li", {duration: 0.3, scaleY:1,stagger:0.3})
