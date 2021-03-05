@@ -8,7 +8,7 @@ var tl = gsap.timeline({delay:0,ease:"circ.out"})
     .to(".transition li", {duration: 0.3, scaleY:1,stagger:0.3})
     .fromTo("path", {drawSVG:"100% 100%"}, {duration: 3, ease: "slow(0.5, 0.4, false)", drawSVG:"0% 100%",stagger:0.5},"-=1")
     .to("svg", {duration: 0.5, fill:"white"},"-=1.5")
-    .to("path", {duration: 0.7, ease: "back.out(3)", scale:1.1, transformOrigin:"center center"}, "-=1.5");
+    .to("path", {duration: 0.7, ease: "back.out(3)", scale:1.15, transformOrigin:"center center"}, "-=1.5");
     
     // .from("path",{duration: 1.5, y:200, rotation:10, transformOrigin:"left bottom",stagger:0.1})
     
