@@ -46,6 +46,12 @@ ul.transition li {
     width: calc((100%)/3);
 }
 
+@media screen and (min-width: 768px) {
+    svg {
+        width: 40% !important;
+    }
+}
+
 svg {
     position: absolute;
     top: 50%;
@@ -55,11 +61,5 @@ svg {
     fill: none;
     stroke: white;
     stroke-width: 3px;
-
     z-index: 10000;
-}
-
-svg path {
-    stroke-linejoin: round;
-    stroke-linecap: round;
 }
