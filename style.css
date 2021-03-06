@@ -22,29 +22,32 @@ h1 {
     margin: 0;
     padding: 0;
     z-index: 1000;
-    background-color: #e3e3e3;
 }
 
-ul.transition {
-    display: flex;
+#bg1 {
     position: absolute;
-    z-index: 10000;
-    height: 100vh;
+    background-color: #101010;
     width: 100%;
-    top: 0;
-    left: 0;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    pointer-events: none;
-    list-style: none;
+    transform-origin: left center;
+    transform: scaleX(1);
+    z-index: 10001;
 }
 
-ul.transition li {
-    transform: scaleY(0);
-    transform-origin: center top;
-    background: #101010;
-    width: calc((100%)/3);
+#bg2 {
+    position: absolute;
+    background-color: #101010e8;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transform-origin: left center;
+    transform: scaleX(1);
+    z-index: 10000;
 }
+
 
 @media screen and (min-width: 768px) {
     svg {
@@ -58,8 +61,8 @@ svg {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    /* fill: none; */
-    stroke: white;
+    fill: none;
+    stroke: none;
     stroke-width: 3px;
-    z-index: 10000;
+    z-index: 10002;
 }
