@@ -21,7 +21,7 @@ h1 {
     height: 100vh;
     margin: 0;
     padding: 0;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 #bg1 {
